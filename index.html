@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ArteViva Creations</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/ArteViva Creations.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="/"><img src="./assets/img/ArteViva Creations.png" id="logo" alt=""></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#albuns" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/img/open-menu-white.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#albuns" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#footer" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+            </div>
+        </div>
+    </header>
+    <section class="container content-area" id="inicio">
+        <div>
+            <h1 class="title-secition">destaque</h1>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carouselInner">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="container content-area" id="albuns">
+        <div>
+            <h1 class="title-secition">mapa</h1>
+            <div id='map'></div>
+        </div>
+    </section>
+    <section class="container content-area">
+        <h1 class="title-secition">lista de albuns</h1>
+        <div>
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="card-container">
+                    <div class="col" id="template-card" style="display: none;">
+                        <div class="card shadow-sm dark-card">
+                            <img src="./assets/img/guernica-de-pablo-picasso.webp"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt=""
+                                style="object-fit: contain;">
+                            <div class="card-body">
+                                <p class="card-text">Guernica</p>
+                                <div class="d-flex justify-content-center align-items-center" style="gap: 15px;">
+                                    <a href="./assets/albuns/album1.html">
+                                        <button type="button" class="btn btn-primary">Detalhes</button>
+                                    </a>
+                                    <button name="0" type="button" class="btn btn-primary verNoMapa"
+                                        onclick="handleClick('0')"><svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px"
+                                            viewBox="0 0 24 24" version="1.1">
+                                            <title>ic_fluent_my_location_24_regular</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="white"
+                                                fill-rule="evenodd">
+                                                <g id="ic_fluent_my_location_24_regular" fill="white"
+                                                    fill-rule="nonzero">
+                                                    <path
+                                                        d="M12,2 C12.3796958,2 12.693491,2.28215388 12.7431534,2.64822944 L12.75,2.75 L12.7490685,4.53770881 L12.7490685,4.53770881 C16.292814,4.88757432 19.1124257,7.70718602 19.4632195,11.2525316 L19.5,11.25 L21.25,11.25 C21.6642136,11.25 22,11.5857864 22,12 C22,12.3796958 21.7178461,12.693491 21.3517706,12.7431534 L21.25,12.75 L19.4616558,12.7490368 L19.4616558,12.7490368 C19.1124257,16.292814 16.292814,19.1124257 12.7474684,19.4632195 L12.75,19.5 L12.75,21.25 C12.75,21.6642136 12.4142136,22 12,22 C11.6203042,22 11.306509,21.7178461 11.2568466,21.3517706 L11.25,21.25 L11.2509632,19.4616558 L11.2509632,19.4616558 C7.70718602,19.1124257 4.88757432,16.292814 4.53678051,12.7474684 L4.5,12.75 L2.75,12.75 C2.33578644,12.75 2,12.4142136 2,12 C2,11.6203042 2.28215388,11.306509 2.64822944,11.2568466 L2.75,11.25 L4.53770881,11.2509315 L4.53770881,11.2509315 C4.88757432,7.70718602 7.70718602,4.88757432 11.2525316,4.53678051 L11.25,4.5 L11.25,2.75 C11.25,2.33578644 11.5857864,2 12,2 Z M12,6 C8.6862915,6 6,8.6862915 6,12 C6,15.3137085 8.6862915,18 12,18 C15.3137085,18 18,15.3137085 18,12 C18,8.6862915 15.3137085,6 12,6 Z M12,8 C14.209139,8 16,9.790861 16,12 C16,14.209139 14.209139,16 12,16 C9.790861,16 8,14.209139 8,12 C8,9.790861 9.790861,8 12,8 Z"
+                                                        id="🎨-Color">
+
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="rodape">
+        <div id="footer_content">
+            <div id="about">
+                <div id="about-text">
+                    <h1>sobre</h1>
+                    <p class="paragrafo-destaque">Sou o Guilherme tenho 19 anos, estudo na Puc Minas Coração eucaristico
+                        no
+                        curso de ciencia da computação, este é um trabalho de Portal de álbuns geolocalizadas da
+                        disciplina
+                        de Desenvolvimento de Interfaces Web.</p>
+                </div>
+
+                <div id="about-card">
+                    <div id="about-profile">
+                        <img src="./assets/img/profile.png" id="about-picture">
+                        <ul class="info">
+                            <li>Nome: <strong class="dois-pontos">Guilherme</strong></li>
+                            <li>Curso: <strong class="dois-pontos">Ciencia da Computação</strong></li>
+                            <li>Turno: <strong class="dois-pontos">Manhã</strong></li>
+
+                        </ul>
+                    </div>
+                    <div id="footer_social_media">
+                        <a href="https://www.instagram.com/gogotasz/" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5531995958006/?" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/GogotaSZ" class="footer-link" id="github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:gilhermeAS1@gmail.com" class="footer-link" id="email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div id="footer_copyright">
+                &#169
+                2023 todos direitos reservados
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/map.js"></script>
+    <script src="./assets/js/api.js"></script>
+    <script>
+        getObras()
+            .then((obras) => {
+                renderImg(obras)
+                renderCards(obras)
+            });
+        const map = new MapBox([-73.97764306124603, 40.761526124837395])
+        const points = MapBox.getPoints()
+        const pointsData = points.data.features
+        for (let index = 0; index < pointsData.length; index++) {
+            const element = pointsData[index];
+            map.addPoint(element)
+        }
+        function handleClick(param) {
+            map.goToPoint(points.data.features[param])
+        }
+    </script>
+
+</body>
+
+</html>

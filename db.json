@@ -1,0 +1,66 @@
+{
+
+  "obras" : [
+      {
+          "id" : 0,
+          "nome" : "Guernica",
+          "autor" : "Pablo Picasso",
+          "ano" : "1937",
+          "localização" : "Museu Nacional Centro de Arte Reina Sofia",
+          "estilo" : "Cubismo e Surrealismo",
+          "img" : "./assets/img/guernica-de-pablo-picasso.webp",
+          "link" : "./assets/albuns/album1.html"
+      },
+      {
+          "id" : 1,
+          "nome" : "A Noite Estrelada",
+          "autor" : "Vincent van Gogh",
+          "ano" : "1889",
+          "localização" : "The Museum of Modern Art",
+          "estilo" : "Impressionismo",
+          "img" : "./assets/img/noite estrelada.jpg",
+          "link" : "./assets/albuns/album2.html"
+      },
+      {
+          "id" : 2,
+          "nome" : "A Persistência da Memória",
+          "autor" : "Salvador Dalí",
+          "ano" : "1931",
+          "localização" : "The Museum of Modern Art",
+          "estilo" : "Surrealismo",
+          "img" : "./assets/img/a-persistencia-da-memoria.webp",
+          "link" : "./assets/albuns/album3.html"
+      },
+      {
+          "id" : 3,
+          "nome" : "Davi",
+          "autor" : "Michelangelo Buonarroti",
+          "ano" : "1504",
+          "localização" : "Galeria da Academia de Belas Artes",
+          "estilo" : "Renascentismo",
+          "img" : "./assets/img/david.avif",
+          "link" : "./assets/albuns/album4.html"
+      },
+      {
+          "id" : 4,
+          "nome" : "Abaporu",
+          "autor" : "Tarsila do Amaral",
+          "ano" : "1928",
+          "localização" : "Museu de Arte Latino-americana",
+          "estilo" : "Modernismo",
+          "img" : "./assets/img/abaporu_tarsila-do-amaral.jpg.webp",
+          "link" : "./assets/albuns/album5.html"
+      },
+      {
+          "id" : 5,
+          "nome" : "O Grito",
+          "autor" : "Edvard Munch",
+          "ano" : "1893",
+          "localização" : "Galeria Nacional",
+          "estilo" : "Expressionismo",
+          "img" : "./assets/img/oGrito.jpeg",
+          "link" : "./assets/albuns/album6.html"
+      }
+  ]
+
+}
