@@ -5,7 +5,7 @@ class MapBox {
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v11',
             center: center,
-            zoom: 7.2
+            zoom: 8 
         });
 
     }
