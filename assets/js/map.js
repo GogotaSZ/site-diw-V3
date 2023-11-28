@@ -37,7 +37,7 @@ class MapBox {
                         "properties": {
                             "link" : "./assets/albuns/album1.html",
                             "title": "Museu Nacional Centro de Arte Reina Sofia",
-                            "description": "Local onde se encotra o quadro A Persistência da Memória"
+                            "description": "Local onde se encotra o quadro Guernica"
                         },
                         "geometry": {
                             "type": "Point",
@@ -51,7 +51,7 @@ class MapBox {
                         "properties": {
                             "link" : "./assets/albuns/album2.html",
                             "title": "The Museum of Modern Art",
-                            "description": "Local onde se encotra o quadro A Noite Estrelada"
+                            "description": "Local onde se encotra o quadro A Noite Estrelada e o quadro A Persistência da Memória"
                         },
                         "geometry": {
                             "type": "Point",
@@ -65,7 +65,7 @@ class MapBox {
                         "properties": {
                             "link" : "./assets/albuns/album3.html",
                             "title": "The Museum of Modern Art",
-                            "description": "Local onde se encotra o quadro A Persistência da Memória"
+                            "description": "Local onde se encotra o quadro A Noite Estrelada e o quadro A Persistência da Memória"
                         },
                         "geometry": {
                             "type": "Point",
