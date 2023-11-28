@@ -3,25 +3,26 @@ class MapBox {
         mapboxgl.accessToken = 'pk.eyJ1IjoiZ2hkc3QiLCJhIjoiY2xwY3p5NmlqMHFzbjJpb3d2czBnMmExZyJ9.6vTNQ-mzY3KmQVXebtq7qg';
         this.map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/light-v11',
+            style: 'mapbox://styles/mapbox/streets-v12',
             center: center,
-            zoom: 8 
+            zoom: 9
         });
 
     }
     addPoint(feature) {
-         new mapboxgl.Marker()
+        console.log(feature)
+        let popup = new mapboxgl.Popup({ offset: 25 })
+            .setHTML(`<h3><a href="${feature.properties.link}">${feature.properties.title}</a></h3><br>
+                          ${feature.properties.description}`);
+        const marker = new mapboxgl.Marker()
             .setLngLat([feature.geometry.coordinates[0], feature.geometry.coordinates[1]])
-            .addTo(this.map);
-        new mapboxgl.Popup({ offset: 35, closeOnClick: true })
-            .setLngLat([feature.geometry.coordinates[0], feature.geometry.coordinates[1]])
-            .setHTML(feature.properties.title)
+            .setPopup(popup)
             .addTo(this.map);
     }
 
     goToPoint(feature) {
         this.map.flyTo({
-        center: [feature.geometry.coordinates[0], feature.geometry.coordinates[1]]
+            center: [feature.geometry.coordinates[0], feature.geometry.coordinates[1]]
         });
     }
 
@@ -34,19 +35,21 @@ class MapBox {
                     {
                         "type": "Feature",
                         "properties": {
+                            "link" : "./assets/albuns/album1.html",
                             "title": "Museu Nacional Centro de Arte Reina Sofia",
                             "description": "Local onde se encotra o quadro A Persistência da Memória"
                         },
                         "geometry": {
                             "type": "Point",
                             "coordinates": [
-                                -3.6946856460234327,40.408843611900586
+                                -3.6946856460234327, 40.408843611900586
                             ]
                         }
                     },
                     {
                         "type": "Feature",
                         "properties": {
+                            "link" : "./assets/albuns/album2.html",
                             "title": "The Museum of Modern Art",
                             "description": "Local onde se encotra o quadro A Noite Estrelada"
                         },
@@ -60,6 +63,7 @@ class MapBox {
                     {
                         "type": "Feature",
                         "properties": {
+                            "link" : "./assets/albuns/album3.html",
                             "title": "The Museum of Modern Art",
                             "description": "Local onde se encotra o quadro A Persistência da Memória"
                         },
@@ -73,6 +77,7 @@ class MapBox {
                     {
                         "type": "Feature",
                         "properties": {
+                            "link" : "./assets/albuns/album4.html",
                             "title": "Galeria da Academia de Belas Artes",
                             "description": "Local onde se encotra a escultura de davi"
                         },
@@ -86,6 +91,7 @@ class MapBox {
                     {
                         "type": "Feature",
                         "properties": {
+                            "link" : "./assets/albuns/album5.html",
                             "title": "Museu de Arte Latino-americana",
                             "description": "Local onde se encotra o quadro Abaporu"
                         },
@@ -99,6 +105,7 @@ class MapBox {
                     {
                         "type": "Feature",
                         "properties": {
+                            "link" : "./assets/albuns/album6.html",
                             "title": "Galeria Nacional de Arte",
                             "description": "Local onde se encotra o quadro O Grito"
                         },
