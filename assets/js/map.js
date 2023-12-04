@@ -10,7 +10,6 @@ class MapBox {
 
     }
     addPoint(feature) {
-        console.log(feature)
         let popup = new mapboxgl.Popup({ offset: 25 })
             .setHTML(`<h3><a href="${feature.properties.link}">${feature.properties.title}</a></h3><br>
                           ${feature.properties.description}`);

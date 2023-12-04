@@ -1,66 +1,134 @@
 {
-
-  "obras" : [
-      {
-          "id" : 0,
-          "nome" : "Guernica",
-          "autor" : "Pablo Picasso",
-          "ano" : "1937",
-          "localização" : "Museu Nacional Centro de Arte Reina Sofia",
-          "estilo" : "Cubismo e Surrealismo",
-          "img" : "./assets/img/guernica-de-pablo-picasso.webp",
-          "link" : "./assets/albuns/album1.html"
-      },
-      {
-          "id" : 1,
-          "nome" : "A Noite Estrelada",
-          "autor" : "Vincent van Gogh",
-          "ano" : "1889",
-          "localização" : "The Museum of Modern Art",
-          "estilo" : "Impressionismo",
-          "img" : "./assets/img/noite estrelada.jpg",
-          "link" : "./assets/albuns/album2.html"
-      },
-      {
-          "id" : 2,
-          "nome" : "A Persistência da Memória",
-          "autor" : "Salvador Dalí",
-          "ano" : "1931",
-          "localização" : "The Museum of Modern Art",
-          "estilo" : "Surrealismo",
-          "img" : "./assets/img/a-persistencia-da-memoria.webp",
-          "link" : "./assets/albuns/album3.html"
-      },
-      {
-          "id" : 3,
-          "nome" : "Davi",
-          "autor" : "Michelangelo Buonarroti",
-          "ano" : "1504",
-          "localização" : "Galeria da Academia de Belas Artes",
-          "estilo" : "Renascentismo",
-          "img" : "./assets/img/david.avif",
-          "link" : "./assets/albuns/album4.html"
-      },
-      {
-          "id" : 4,
-          "nome" : "Abaporu",
-          "autor" : "Tarsila do Amaral",
-          "ano" : "1928",
-          "localização" : "Museu de Arte Latino-americana",
-          "estilo" : "Modernismo",
-          "img" : "./assets/img/abaporu_tarsila-do-amaral.jpg.webp",
-          "link" : "./assets/albuns/album5.html"
-      },
-      {
-          "id" : 5,
-          "nome" : "O Grito",
-          "autor" : "Edvard Munch",
-          "ano" : "1893",
-          "localização" : "Galeria Nacional",
-          "estilo" : "Expressionismo",
-          "img" : "./assets/img/oGrito.jpeg",
-          "link" : "./assets/albuns/album6.html"
-      }
+  "obras": [
+    {
+      "id": 0,
+      "nome": "Guernica",
+      "autor": "Pablo Picasso",
+      "ano": "26 de abril de 1937",
+      "localizacao": "40.40861486982069, -3.6945569",
+      "descricao": "Guernica, a notável obra-prima de Pablo Picasso criada em 1937, é uma expressão visual impactante do horror da guerra, especialmente inspirada pelo bombardeio da cidade basca de Guernica durante a Guerra Civil Espanhola. A pintura em preto e branco retrata figuras distorcidas, animais agonizantes e símbolos de sofrimento, evocando uma visceral denúncia da violência e do caos. Com sua composição emotiva e simbolismo pungente, Guernica permanece como um testemunho duradouro da capacidade da arte em refletir e condenar as tragédias humanas decorrentes do conflito armado.",
+      "img": "./assets/img/guernica-de-pablo-picasso.webp",
+      "link": "./assets/albuns/album.html?id=0"
+    },
+    {
+      "id": 1,
+      "nome": "A Noite Estrelada",
+      "autor": "Vincent van Gogh",
+      "ano": "junho de 1889",
+      "localizacao": "40.76206655561337, -73.97753576931773",
+      "descricao": "Noite Estrelada, a obra-prima do artista pós-impressionista Vincent van Gogh, pintada em 1889, é uma representação vibrante e emocional do céu noturno. As pinceladas expressivas e os tons intensos de azul, amarelo e verde capturam a energia do momento, enquanto estrelas cintilantes se espalham pelo firmamento sobre uma paisagem que inclui ciprestes e uma tranquila vila. Van Gogh transmite uma sensação de movimento e vitalidade, revelando sua perspectiva única sobre a natureza e sua habilidade em traduzir emoções profundas para a tela. A obra continua a ser reverenciada como uma expressão poderosa da visão artística singular de Van Gogh.",
+      "img": "./assets/img/noite estrelada.jpg",
+      "link": "./assets/albuns/album.html?id=1"
+    },
+    {
+      "id": 2,
+      "nome": "A Persistência da Memória",
+      "autor": "Salvador Dalí",
+      "ano": "1931",
+      "localizacao": "40.76206655561337, -73.97753576931773",
+      "descricao": "A Persistência da Memória, uma icônica pintura surrealista de Salvador Dalí, cria um cenário onírico e intrigante com relógios derretendo em um ambiente desolado. Criada em 1931, a obra desafia a percepção temporal ao retratar o tempo como maleável e subjetivo. Os relógios flácidos, pendurados sobre paisagens desertas, sugerem a relatividade do tempo e a fugacidade da realidade. A presença de um rosto derretido também adiciona uma dimensão psicológica, enquanto os elementos surrealistas convergem para explorar a natureza elusiva e impermanente da memória e do tempo. A obra de Dalí continua a ser uma reflexão visual intrigante sobre a subjetividade do tempo e a fragilidade da experiência humana.",
+      "img": "./assets/img/a-persistencia-da-memoria.webp",
+      "link": "./assets/albuns/album.html?id=2"
+    },
+    {
+      "id": 3,
+      "nome": "Davi",
+      "autor": "Michelangelo Buonarroti",
+      "ano": "1501 - 1504",
+      "localizacao": "43.77741873575336, 11.258685315341145",
+      "descricao": "A escultura de Davi é uma obra-prima renascentista esculpida por Michelangelo entre 1501 e 1504. A estátua representa o herói bíblico Davi, que derrotou o gigante Golias com uma única pedra. Michelangelo capturou magistralmente a perfeição física e a expressão serena do jovem guerreiro em um bloco de mármore, demonstrando sua notável habilidade escultural. Davi é retratado em um momento de calma antes do confronto, sua postura ereta e musculatura detalhada transmitem uma sensação de força contida. A escultura é celebrada não apenas pela maestria técnica de Michelangelo, mas também por sua capacidade de transmitir emoção e significado mais profundo através da representação artística clássica. Davi é uma peça central na história da escultura e permanece como um ícone da excelência artística renascentista.",
+      "img": "./assets/img/david.avif",
+      "link": "./assets/albuns/album.html?id=3"
+    },
+    {
+      "id": 4,
+      "nome": "Abaporu",
+      "autor": "Tarsila do Amaral",
+      "ano": "26 de junho de 1928",
+      "localizacao": "-34.576072823337284, -58.40335298465885",
+      "descricao": "Abaporu, uma obra-prima do movimento antropofágico, foi pintado por Tarsila do Amaral em 1928 e é considerado um ícone da arte moderna brasileira. A tela retrata uma figura feminina de proporções exageradas e simplificadas, deitada em um cenário de terras áridas. Com sua estética única e cores vibrantes, a pintura transcende o simples retrato, tornando-se uma expressão simbólica da identidade e cultura brasileira. Abaporu, cujo nome significa homem que come em tupi-guarani, representa a fusão de influências culturais e a ideia de devorar, reinterpretar e incorporar elementos estrangeiros na construção de uma identidade nacional autêntica. A obra de Tarsila do Amaral desempenha um papel fundamental na história da arte brasileira, destacando-se por sua originalidade e contribuição para a afirmação da identidade cultural no contexto artístico.",
+      "img": "./assets/img/abaporu_tarsila-do-amaral.jpg.webp",
+      "link": "./assets/albuns/album.html?id=4"
+    },
+    {
+      "id": 5,
+      "nome": "O Grito",
+      "autor": "Edvard Munch",
+      "ano": "1893",
+      "localizacao": "38.891849141827606, -77.02013666136457",
+      "descricao": "O Grito, uma obra-prima do expressionista norueguês Edvard Munch, pintada em 1893, é uma representação visceral e angustiante da ansiedade existencial. A figura central, com rosto distorcido e mãos nas têmporas, parece ecoar um grito silencioso que ressoa através do cenário vibrante e tumultuado. A paleta de cores intensas, especialmente o vermelho e o amarelo, contribui para a sensação de desespero e agonia. A pintura captura a experiência humana universal de desolação e isolamento, tornando-se um ícone poderoso da arte moderna e uma representação atemporal da fragilidade emocional humana.",
+      "img": "./assets/img/oGrito.jpeg",
+      "link": "./assets/albuns/album.html?id=5"
+    }
+  ],
+  "fotos": [
+    {
+      "id": 0,
+      "imagens": ["../img/guernica-pablo-picasso-album1.webp","../img/guernica-album2.jpg","../img/Guernica-album3.jpg"],
+      "descricao": "Exposição da Obra Guernica no Museu Nacional Centro de Arte Reina Sofia em Madri na Espanha.",
+      "link": "./assets/albuns/album1.html"
+    },
+    {
+      "id": 1,
+      "imagens": ["../img/guernica-pablo-picasso-album1.webp","../img/guernica-album2.jpg","../img/Guernica-album3.jpg"],
+      "descricao": "Exposição da Obra A Noite Estrelada no The Museum of Modern Art em Nova York nos Estados Unidos.",
+      "link": "./assets/albuns/album2.html"
+    },
+    {
+      "id": 2,
+      "imagens": "./img/museu-dali-album1.jpg",
+      "descricao": "Exposição da obra A Persistência da Memória no The Museum of Modern Art em Nova York nos Estados Unidos.",
+      "link": "./assets/albuns/album3.html"
+    },
+    {
+      "id": 3,
+      "imagens": "./img/davi-album1.jpg",
+      "descricao": "Exposição da escultura de Davi na Galeria da Academia de Belas Artes em Florença na Itália.",
+      "link": "./assets/albuns/album4.html"
+    },
+    {
+      "id": 4,
+      "imagens": "./img/abaporu-Album1.jpg",
+      "descricao": "Exposição da obra Abaporu no Museu de Arte Latino-americana em Buenos Aires na Argentina.",
+      "link": "./assets/albuns/album5.html"
+    },
+    {
+      "id": 5,
+      "imagens": "./img/OGrito-Album1.webp",
+      "descricao": "Exposição da obra O Grito na Galeria Nacional em Washington D.C nos Estados Unidos.",
+      "link": "./assets/albuns/album6.html"
+    }
+  ],
+  "destaque": [
+    {
+      "id": 0,
+      "link": "./assets/albuns/album1.html",
+      "descricao": "Exposição da Obra Guernica no Museu Nacional Centro de Arte Reina Sofia em Madri na Espanha."
+    },
+    {
+      "id": 1,
+      "link": "./assets/albuns/album2.html",
+      "descricao": "Exposição da Obra A Noite Estrelada no The Museum of Modern Art em Nova York nos Estados Unidos."
+    },
+    {
+      "id": 2,
+      "link": "./assets/albuns/album3.html",
+      "descricao": "Exposição da obra A Persistência da Memória no The Museum of Modern Art em Nova York nos Estados Unidos."
+    },
+    {
+      "id": 3,
+      "link": "./assets/albuns/album4.html",
+      "descricao": "Exposição da escultura de Davi na Galeria da Academia de Belas Artes em Florença na Itália."
+    },
+    {
+      "id": 4,
+      "link": "./assets/albuns/album5.html",
+      "descricao": "Exposição da obra Abaporu no Museu de Arte Latino-americana em Buenos Aires na Argentina."
+    },
+    {
+      "id": 5,
+      "link": "./assets/albuns/album6.html",
+      "descricao": "Exposição da obra O Grito na Galeria Nacional em Washington D.C nos Estados Unidos."
+    }
   ]
-
 }
