@@ -1,12 +1,3 @@
 ### Setup do projeto
-Execute:
-```
-npm install -g json-server
-```
 
-Então execute:
-```
-json-server --watch db.json
-```
-
-Agora acesse o index.html
+[Visite o Site](https://site-diw-v3.vercel.app/)

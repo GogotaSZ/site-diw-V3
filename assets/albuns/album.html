@@ -189,10 +189,9 @@
             .then((fotos) => {
                 fillFotos(fotos.imagens)
                 renderImg(fotos.imagens)
-                filldescricao(fotos.descricao)
             });
         findObra(id)
-            .then((obra) => {
+            .then((obra) => {   
                 filldescricao(obra.descricao)
                 filllocale(obra.localizacao)
                 filldata(obra.ano)
