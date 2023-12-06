@@ -22,6 +22,11 @@ function filldata(ano){
         item.textContent = ano;
 }
 
+function fillvideo(video) {
+    var item = document.getElementById('videoa');
+    item.innerHTML = video;
+}
+
 function renderImg(obras) {
 
     const carouselInner = document.getElementById('carouselInner');

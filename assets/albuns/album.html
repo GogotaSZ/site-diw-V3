@@ -95,7 +95,7 @@
             </div>
         </div>
         </div>
-        <section class="container content-area">
+        <section class="container content-area" id="videoa">
             <iframe id="video" src="https://www.youtube.com/embed/QyBK5TO70PA?si=g1Nlm9RLS5IAWJRV&amp;controls=0"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -148,13 +148,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Guernica</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Fotos</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>
-                        Exposição da Obra Guernica no Museu Nacional Centro de Arte Reina Sofia em Madri na Espanha.
-                    </p>
+                    
                 </div>
                 <div>
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -185,20 +183,23 @@
     <script src="../js/detalhes.js"></script>
     <script src="../js/api.js"></script>
     <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
         findFoto(id)
             .then((fotos) => {
                 fillFotos(fotos.imagens)
                 renderImg(fotos.imagens)
+                filldescricao(fotos.descricao)
             });
         findObra(id)
             .then((obra) => {
                 filldescricao(obra.descricao)
                 filllocale(obra.localizacao)
                 filldata(obra.ano)
+                fillvideo(obra.video)
+
             }); 
     </script>
 </body>
 
-</html> 
+</html>
